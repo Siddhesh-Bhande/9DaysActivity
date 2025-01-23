@@ -1,0 +1,40 @@
+/* Custom styles */
+.activity-card {
+  transition: transform 0.2s;
+}
+
+.activity-card:hover {
+  transform: scale(1.02);
+}
+
+.canvas-container {
+  touch-action: none;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bounce {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
